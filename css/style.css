@@ -8,7 +8,7 @@
 }
 
 header{
-    background-color: rgb(84, 226, 117);
+    background-color: #3DE07E;
 
     min-height: 30vh;
 
@@ -112,7 +112,7 @@ main{
     padding:0.5rem 1rem;
     width:12rem;
 
-    background-color: rgb(205, 61, 90);
+    background-color: #E83F57;
     font-size:1rem;
     color:rgb(255, 255, 255);
     border-style:none;
@@ -155,10 +155,11 @@ table{
 }
 
 th{
-    background-color: rgba(132,25,25,0.439);
+    background-color: rgba(237,54,54,0.2);
     font-weight: lighter;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: rgb(185, 185, 185);
+    padding:1rem 0.2rem;
 }
 
 td{
@@ -180,7 +181,7 @@ tfoot td{
 
     font-size: 1rem;
     font-weight: bold;
-    background-color: rgb(205, 61, 90);
+    background-color: #E83F57;
     color:white;
     border-style:none;
     border-radius: 3px;
