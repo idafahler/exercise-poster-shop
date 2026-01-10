@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --blackish: #222222;
+    --black: #000000;
+    --white: #ffffff;
+    --green:#3DE07E;
+    --red: #E83F57;
+    --darkgrey: #333333;
+    --lightgrey: #afafaf;
+    --red-transparent: #ED363633;
 
     --font-roboto: "Roboto", sans-serif;
     --font-fira: "Fira Sans", sans-serif;
@@ -14,7 +21,7 @@
 
 /* Header */
 header{
-    background-color: #3DE07E;
+    background-color: var(--green);
 
     min-height: 30vh;
 
@@ -55,7 +62,11 @@ header{
     align-items: center;
     flex-direction: column;
 
-    background-color: rgb(0, 0, 0);
+    background-color: var(--black);
+}
+
+body{
+    font-family: var(--font-fira);
 }
 
 .wrapper{
@@ -93,11 +104,11 @@ header{
 .card{
     margin-bottom:2rem;
 
-    color:rgb(255, 255, 255);
+    color:var(--white);
 }
 
 .big-card{
-    background-color: rgb(255, 255, 255);
+    background-color: var(--white);
 }
 
 .card h2{
@@ -120,9 +131,9 @@ header{
     padding:0.5rem 1rem;
     width:12rem;
 
-    background-color: #E83F57;
+    background-color: var(--red);
     font-size:1rem;
-    color:rgb(255, 255, 255);
+    color:var(--white);
     border-style:none;
     border-radius: 3px;
 }
@@ -135,7 +146,7 @@ header{
     align-self: flex-start;
     margin: 4rem 0 4rem 0;
 
-    color:rgb(255, 255, 255);
+    color:var(--white);
     font-size: 3rem;
 }
 
@@ -160,14 +171,14 @@ table{
     font-size:1.5rem;
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
-    color:rgb(255, 255, 255);
+    color:var(--white);
 }
 
 th{
-    background-color: rgba(237,54,54,0.2);
+    background-color: var(--red-transparent);
     font-weight: lighter;
     font-size: 1.2rem;
-    color: rgb(185, 185, 185);
+    color: var(--lightgrey);
     padding:1rem 0.2rem;
 }
 
@@ -176,7 +187,7 @@ td{
 }
 
 tfoot td{
-    border-top: 2px solid rgb(255, 255, 255);
+    border-top: 2px solid var(--white);
 }
 
 .lastcol{
@@ -190,8 +201,8 @@ tfoot td{
 
     font-size: 1rem;
     font-weight: bold;
-    background-color: #E83F57;
-    color:white;
+    background-color: var(--red);
+    color:var(--white);
     border-style:none;
     border-radius: 3px;
 }
@@ -201,8 +212,8 @@ tfoot td{
     display:flex;
     justify-content: space-around;
 
-    background-color: rgb(71,67,68);
-    color:rgb(255, 255, 255);
+    background-color: var(--darkgrey);
+    color:var(--white);
     padding: 3rem;
 
     h2{
@@ -216,7 +227,7 @@ tfoot td{
 
         a{
             text-decoration: none;
-            color: rgb(255, 255, 255);
+            color: var(--white);
         }
     }
 }
