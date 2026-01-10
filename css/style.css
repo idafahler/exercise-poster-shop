@@ -195,19 +195,19 @@ tfoot td{
     background-color: rgb(71,67,68);
     color:rgb(255, 255, 255);
     padding: 3rem;
-}
 
-.footer-links h2{
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-}
+    h2{
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
 
-.footer-links nav{
-    display:flex;
-    flex-direction: column;
-}
+    .footer__navigation{
+        display:flex;
+        flex-direction: column;
 
-.footer-links nav a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+        a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+    }
 }

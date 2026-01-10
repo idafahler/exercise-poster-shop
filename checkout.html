@@ -8,95 +8,108 @@
     <title>Checkout</title>
 </head>
 <body>
-    <header>
+    <!--Page Header-->
+    <header class="header">
         <aside>
-            <a href="index.html"><img id="navicon" src="images/navicon.svg" alt=""></a>
+            <a href="index.html"><img id="navicon" src="images/navicon.svg" alt="Hamburger Button"></a>
         </aside>
         <h1>Checkout</h1>
-        <img id="ninjahead" src="images/ninjahead.svg" alt="">
+        <img class="header__ninja-head" src="images/ninjahead.svg" alt="Ninja">
     </header>
-<main>
-    <div class="co-wrapper">
-    <h2 id="title-checkout">Varor i korg</h2>
-    <div class="wrapper-bigcard">
-        <article class="big-card">
-            <figure>
-                <img src="images/char-7.png" alt="">
-            </figure>
-            <section>
-                <h2>Fotograf</h2>
-                <button class="button">Ta bort från varukorg</button>
-            </section>
-        </article>
-        <article class="big-card">
-            <figure>
-                <img src="images/char-9.png" alt="">
-            </figure>
-            <section>
-                <h2>Personlig tränare</h2>
-                <button class="button">Ta bort från varukorg</button>
-            </section>
-        </article>
-    </div>
 
-    <article class="shopping-cart">
-        <table>
-            <thead>
-                <tr>
-                    <th>Vara</th>
-                    <th>Antal</th>
-                    <th class="lastcol">Pris</th>
-                </tr>
-            </thead>
+    <!--Main content-->
+    <main class="main-container">
+        <div class="co-wrapper">
+        <h2 id="title-checkout">Items in cart</h2>
 
-            <tbody>
-                <tr>
-                    <td>Poster Fotograf</td>
-                    <td>1</td>
-                    <td class="lastcol">179 sek</td>
-                </tr>
-                <tr>
-                    <td>Poster Crossfit</td>
-                    <td>1</td>
-                    <td class="lastcol">179 sek</td>
-                </tr>
-            </tbody>
-
-            <tfoot>
-                <tr>
-                    <td colspan="2"><strong>Totalt</strong></td>
-                    <td class="lastcol"><strong>358 sek</strong></td>
-                </tr>
-            </tfoot>
-        </table>
-        <button id="co-button">Gimmie gimmie gimmie!</button>
-    </article>
-    </div>
-</main>
-
-    <footer>
-        <section class="footer-links">
-            <nav>
-                <h2>Nav</h2>
-                <a href="#" class="link">Products</a>
-                <a href="#" class="link">About us</a>
-                <a href="#" class="link">Contact</a>
-            </nav>
-            <article class="contact-info">
-                <h2>Address</h2>
-                <p>Plinkeplonkvägen 32</p>
-                <p>888 81 Klonkberga</p>
-            </article>
-            <article class="social-media">
-                <h2>Social media</h2>
-                <section class="icons">
-                    <img src="images/logo-twitter.svg" alt="">
-                    <img src="images/logo-facebook.svg" alt="">
-                    <img src="images/logo-linkedin.svg" alt="">
-                    <img src="images/logo-instagram.svg" alt="">
+        <div class="wrapper-bigcard">
+            <!--Big card-->
+            <article class="big-card">
+                <figure>
+                    <img src="images/char-7.png" alt="Photograph">
+                </figure>
+                <section>
+                    <h2>Photographer</h2>
+                    <button class="button">Remove from cart</button>
                 </section>
             </article>
-        </section>
-    </footer>
-</body>
+
+            <!--Big card-->
+            <article class="big-card">
+                <figure>
+                    <img src="images/char-9.png" alt="Personal trainer">
+                </figure>
+                <section>
+                    <h2>Personal trainer</h2>
+                    <button class="button">Remove from cart</button>
+                </section>
+            </article>
+        </div>
+
+        <article class="shopping-cart">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th class="lastcol">Price</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Poster Photographer</td>
+                        <td>1</td>
+                        <td class="lastcol">179 sek</td>
+                    </tr>
+                    <tr>
+                        <td>Poster Crossfit</td>
+                        <td>1</td>
+                        <td class="lastcol">179 sek</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="2"><strong>Totalt</strong></td>
+                        <td class="lastcol"><strong>358 sek</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <button id="co-button">Gimmie gimmie gimmie!</button>
+        </article>
+        </div>
+    </main>
+
+        <!--Page Footer-->
+        <footer>
+            <section class="footer-links">
+                <!--Nav block-->
+                <nav class="footer__navigation">
+                    <h2>Nav</h2>
+                    <a href="#" class="link">Products</a>
+                    <a href="#" class="link">About us</a>
+                    <a href="#" class="link">Contact</a>
+                </nav>
+
+                <!--Address block-->
+                <article class="footer__address">
+                    <h2>Address</h2>
+                    <p>Plinkeplonkvägen 32</p>
+                    <p>888 81 Klonkberga</p>
+                </article>
+
+                <!--Social media block-->
+                <article class="social-media">
+                    <h2>Social media</h2>
+                    <section class="icons">
+                        <img src="images/logo-twitter.svg" alt="">
+                        <img src="images/logo-facebook.svg" alt="">
+                        <img src="images/logo-linkedin.svg" alt="">
+                        <img src="images/logo-instagram.svg" alt="">
+                    </section>
+                </article>
+            </section>
+        </footer>
+    </body>
 </html>
