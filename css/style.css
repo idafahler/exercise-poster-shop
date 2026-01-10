@@ -16,32 +16,33 @@ header{
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: auto 1fr 1fr auto;
     gap: 1rem;
-}
 
-#navicon{
+    #navicon{
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     margin: 1rem;
-}
+    }
 
-header h1{
-    grid-column: 2 / 5;
-    grid-row: 2 / 4;
-    place-self: center;
+    h1{
+        grid-column: 2 / 5;
+        grid-row: 2 / 4;
+        place-self: center;
 
-    font-size: 6vw;
-}
+        font-size: 6vw;
+    }
 
-#ninjahead{
+    .header__ninja-head{
     grid-column: 2 / 5;
     grid-row: 4 / 5;
     justify-self: center;
     align-self: end;
 
     max-width: 18vw;
+    }
+
 }
 
-main{
+.main-container{
     display:flex;
     justify-content: center;
     align-items: center;
